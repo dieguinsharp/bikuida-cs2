@@ -15,8 +15,6 @@ The screenshot below shows Bikuida running in-game, with its configuration menu 
 - **Trigger:** Configurable field of view.
 - **Aimbot:** Configurable field of view.
 
-Some features may require additional configuration and compatible offsets.
-
 ## Features
 
 - WPF configuration menu.
