@@ -2,6 +2,10 @@
 
 Bikuida is an external CS2 menu application built with **C# and .NET 10**. It uses WPF for the menu and ImGui.NET for the overlay.
 
+## In Game
+
+<img width="1913" height="1077" alt="menu" src="https://github.com/user-attachments/assets/b1716851-f69e-4cc2-8dfd-1c26fdac8866" />
+
 ## Features
 
 - WPF configuration menu.
