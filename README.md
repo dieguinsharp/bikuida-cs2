@@ -2,9 +2,20 @@
 
 Bikuida is an external CS2 menu application built with **C# and .NET 10**. It uses WPF for the menu and ImGui.NET for the overlay.
 
-## In Game
+## In Game Preview
+
+The screenshot below shows Bikuida running in-game, with its configuration menu and visual overlay.
 
 <img width="1913" height="1077" alt="menu" src="https://github.com/user-attachments/assets/b1716851-f69e-4cc2-8dfd-1c26fdac8866" />
+
+### Available Settings
+
+- **ESP:** Skeleton, Box, Name, Health, Lines and Weapon.
+- **Opacity:** Adjusts the overlay transparency.
+- **Trigger:** Configurable field of view.
+- **Aimbot:** Configurable field of view.
+
+Some features may require additional configuration and compatible offsets.
 
 ## Features
 
