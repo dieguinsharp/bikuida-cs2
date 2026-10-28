@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<UseWPF>True</UseWPF>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net10.0-windows</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<ApplicationManifest>app.manifest</ApplicationManifest>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+		<UseWindowsForms>True</UseWindowsForms>
+
+		<!-- Entrega ao cliente: single-file self-contained win-x64 -->
+		<RuntimeIdentifier>win-x64</RuntimeIdentifier>
+		<SelfContained>true</SelfContained>
+		<PublishSingleFile>true</PublishSingleFile>
+		<IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+		<EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
+		<ApplicationIcon>ico.ico</ApplicationIcon>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <None Remove="ico.ico" />
+	  <None Remove="Resources\ico.ico" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Include="ico.ico" />
+	  <EmbeddedResource Include="Resources\ico.ico" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="ClickableTransparentOverlay" Version="9.1.0" />
+		<PackageReference Include="ImGui.NET" Version="1.90.0.1" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Update="Menu\EspMenuWindow.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</None>
+	</ItemGroup>
+
+</Project>
