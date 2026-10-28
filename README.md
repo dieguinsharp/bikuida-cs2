@@ -1,6 +1,6 @@
 # Bikuida CS2
 
-Bikuida is a Windows desktop application built with **C# and .NET 10**. It uses WPF for the menu and ImGui.NET for the overlay.
+Bikuida is an external CS2 menu application built with **C# and .NET 10**. It uses WPF for the menu and ImGui.NET for the overlay.
 
 ## Features
 
