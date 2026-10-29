@@ -32,6 +32,11 @@ The screenshot below shows Bikuida running in-game, with its configuration menu 
 - .NET 10 SDK
 - Visual Studio with the .NET desktop development workload, or the .NET CLI
 
+## Download
+
+You can see below the releases:
+https://github.com/dieguinsharp/bikuida-cs2/releases
+
 ## Build and Publish
 
 From the project directory, run:
