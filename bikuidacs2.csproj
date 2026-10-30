@@ -17,7 +17,7 @@
 		<IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
 		<EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
 		<ApplicationIcon>ico.ico</ApplicationIcon>
-		<AssemblyName>BIkuida</AssemblyName>
+		<AssemblyName>Bikuida</AssemblyName>
 	</PropertyGroup>
 
 	<ItemGroup>
