@@ -16,11 +16,9 @@ namespace Bikuida.Services
         private const string GameName = "cs2";
 
         [STAThread]
-        public async Task StartBikuidaProject(EspConfig config)
+        public async Task StartBikuidaProject(EspConfig config, Offsets offsets)
         {
             var process = EnsureGameRunning();
-            var offsets = await LoadOffsets();
-
             var screenSize = GetScreenSize();
             var gameData = new GameData();
             var localPlayer = new Entity();
@@ -49,19 +47,6 @@ namespace Bikuida.Services
                 Application.Exit();
             }
             return process;
-        }
-
-        private async Task<Offsets> LoadOffsets()
-        {
-            var offsetService = new OffsetsService();
-            var offsets = await offsetService.GetOffsetsAsync();
-            if (offsets.Record == null)
-            {
-                MessageBox.Show("Offsets not found :(", "Bikuida", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                Environment.Exit(0);
-                Application.Exit();
-            }
-            return offsets.Record;
         }
 
         private Vector2 GetScreenSize()

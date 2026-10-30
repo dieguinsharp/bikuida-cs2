@@ -1,4 +1,5 @@
 ﻿using Bikuida.Config;
+using Bikuida.Models;
 using Bikuida.Services;
 using System.ComponentModel;
 using System.Numerics;
@@ -13,13 +14,13 @@ namespace Bikuida.Menu
         public event PropertyChangedEventHandler? PropertyChanged;
 
 
-        public EspMenuViewModel(EspConfig cfg)
+        public EspMenuViewModel(EspConfig cfg, Offsets offsets)
         {
            _cfg = cfg;
            Fov = _cfg.Fov;
            AimbotFov = _cfg.AimbotFov;
            Opacity = _cfg.Opacity;
-           _ = bikuidaBootstrap.StartBikuidaProject(_cfg);
+           _ = bikuidaBootstrap.StartBikuidaProject(_cfg, offsets);
         }
 
         // Helper: Vector4 ↔ SolidColorBrush

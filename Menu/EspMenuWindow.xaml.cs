@@ -1,4 +1,5 @@
 using Bikuida.Config;
+using Bikuida.Models;
 using System.ComponentModel;
 using System.IO;
 using System.Windows;
@@ -12,9 +13,9 @@ namespace Bikuida.Menu
     {
         private readonly EspMenuViewModel _vm;
 
-        public EspMenuWindow(EspConfig config)
+        public EspMenuWindow(EspConfig config, Offsets offsets)
         {
-            _vm = new EspMenuViewModel(config);
+            _vm = new EspMenuViewModel(config, offsets);
             InitializeComponent();
             DataContext = _vm;
             LoadIcon();
